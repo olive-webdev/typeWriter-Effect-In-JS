@@ -1,0 +1,1 @@
+let h=-1,n=0,w=!0;const e=document.querySelector("em"),i=e.textContent.split(", "),d=100,l=15,c=["#ffa500","#5f9ea0","#32cd32"],a=()=>{e.style.color=c[n],w&&(h++,h===i[n].length+l&&(w=!1),e.innerText=i[n].slice(0,h)),w||(1===h&&(w=!0),e.innerText=i[n].slice(0,h),h--,0===h&&n++,3===n&&(n=0));const t=setTimeout(a,d)};window.onload=()=>a();
